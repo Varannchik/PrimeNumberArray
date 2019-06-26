@@ -4,9 +4,9 @@ let primeNumber = allNumber.filter(function(number) {
   if(number==1){
     return false;
   }     
-  for(d=2; d*d<=number; d++){  
+  for(let d=2; d*d<=number; d++){  
     if(number%d==0){
-       return false;
+      return false;
     }      
   }
   return number;  
